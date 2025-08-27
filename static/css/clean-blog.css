@@ -1,0 +1,94 @@
+/* General body styles */
+body {
+  font-size: 20px;
+  color: #212529;
+  font-family: 'Lora', 'Times New Roman', serif;
+  background-color: #f8f9fa; /* subtle background */
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin: 25px 0;
+  color: #444;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+/* Links */
+a {
+  color: #0085A1;
+  transition: all 0.3s ease;
+}
+a:hover, a:focus {
+  color: #005f70;
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 25px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 8px;  /* rounded corners */
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+  background-color: #0085A1;
+  border-color: #0085A1;
+  color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #00657b !important;
+  border-color: #00657b !important;
+  color: #fff;
+}
+
+/* Large button */
+.btn-lg {
+  font-size: 17px;
+  padding: 18px 35px;
+  border-radius: 10px;
+}
+
+/* Forms */
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  padding: 8px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+.floating-label-form-group input:focus,
+.floating-label-form-group textarea:focus {
+  border-color: #0085A1;
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background: #212529;
+  color: #ddd;
+  padding: 40px 0;
+}
+footer .copyright {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #bbb;
+}

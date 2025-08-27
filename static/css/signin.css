@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: url(bg3.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Signin form box */
+.form-signin {
+  width: 100%;
+  max-width: 360px;
+  padding: 30px 25px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Checkbox */
+.form-signin .checkbox {
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Inputs */
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 12px 15px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+  border-color: #0085a1;
+  box-shadow: 0 0 6px rgba(0, 133, 161, 0.4);
+  outline: none;
+}
+
+/* Special rules for stacked email/password */
+.form-signin input[type="email"] {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Login button */
+.form-signin button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: #0085a1;
+  border: none;
+  color: #fff;
+  transition: background 0.3s, transform 0.2s;
+}
+.form-signin button:hover {
+  background: #00657b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
