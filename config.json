@@ -1,0 +1,17 @@
+{
+  "params":
+  {
+   "local_server": "True",
+    "local_uri": "mysql://root:@localhost/provision",
+    "proud_uri": "mysql://root:@localhost/provision",
+    "fb_url":"https://www.facebook.com/",
+    "tw_url":"https://www.facebook.com/",
+    "gh_url":"https://github.com/",
+    "blog_name": "WELCOME",
+    "headname": "PROVISION STORE MANAGEMENT SYSTEM",
+    "user": "demo",
+    "password": "demo",
+    "login_image": "aple.jpg"
+
+  }
+}

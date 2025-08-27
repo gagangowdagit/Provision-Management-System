@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead mb-0" style="background-image: url('{{url_for('static',filename='img/gmail.jpg')}}">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h2> UPDATE ORDERED ITEMS AND PRODUCTS </h2>
+            <h4> Upadate Ordered Items with Wholesalers </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+   {% with messages=get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  {% for category, message in messages %}
+
+  <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+    {{message}}
+
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Provision Store Management System</p>
+     
+
+
+
+
+
+
+
+
+        <form name="sentMessage" id="contactForm" novalidate action="/orders" method="post">
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>mid</label>
+              <input type="number" name='mid' class="form-control" placeholder="Order id" id="mid" required data-validation-required-message="Please enter id" >
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>name</label>
+              <input type="text" name="name" class="form-control" placeholder="Wholesaler Name" id="name" required data-validation-required-message="Please enter name">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+       
+            <div class="control-group">
+
+            <div class="form-group floating-label-form-group controls">
+              <label>Items</label>
+              <textarea rows="5" class="form-control" placeholder="Enter Items Names" id="items" name="items" required data-validation-required-message="Please enter a Items and Products" ></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Products</label>
+              <textarea rows="5" class="form-control" placeholder="Enter Products Names" id="products" name="products" required data-validation-required-message="Please enter products" ></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Email id</label>
+              <input type="email" name="email" class="form-control" placeholder="Enter Wholesaler Mail id" id="email" required data-validation-required-message="Please enter email">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+            <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>arrival</label>
+              <input type="Date" name="arrival" class="form-control" placeholder="Enter Arrival Date" id="arrival" required data-validation-required-message="Please enter arrival date DD,month,year">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <div class="form-group">
+            <button onclick="return confirm('Are you sure to SaveData?');" type="submit" class="btn btn-primary" id="sendMessageButton" >Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
+{% endblock %}
+  
